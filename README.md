@@ -18,12 +18,18 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 <br/><br/>
 
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/screen-dark.jpg" width="300" alt="Dark · With Logo"/></td>
+    <td align="center"><img src="assets/screen-light.jpg" width="300" alt="Light · No Logo"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Dark · With Logo</b></td>
+    <td align="center"><b>Light · No Logo</b></td>
+  </tr>
+</table>
 
-|  |  |
-|:---:|:---:|
-| <img src="assets/screen-dark.jpg" width="300" alt="Dark · With Logo"/> | <img src="assets/screen-light.jpg" width="300" alt="Light · No Logo"/> |
-| **Dark · With Logo** | **Light · No Logo** |
+</div>
 
 ---
 
@@ -107,9 +113,28 @@ Need to convert an image to Base64? See the [Helper](#-image--base64-helper) bel
 
 ## 🔄 Image → Base64 Helper
 
-Two ways to convert your image into a Base64 string for pasting into the Logo or Background field.
+To use a custom logo or background, you need a **Base64 string** — a long block of letters and numbers that represents your image as plain text.
 
-Use any online image-to-Base64 converter (e.g. [base64.guru](https://base64.guru/converter/encode/image)) to turn your image into a string. When pasting into the shortcut, make sure the string starts with `data:image/jpeg;base64,` or `data:image/png;base64,`.
+**How to get one**
+
+1. Open an online converter (e.g. [base64.guru](https://base64.guru/converter/encode/image)).
+2. Upload your image. The tool gives you a long string back.
+3. Copy it and paste into the Logo or Background field in the Dictionary.
+
+**Important — the prefix**
+
+The string you paste needs a short prefix at the very front so the shortcut knows what file type it is. The final value looks like this:
+
+```
+data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ...(thousands more characters)
+```
+
+| Your image | Prefix to put in front |
+|---|---|
+| `.jpg` / `.jpeg` | `data:image/jpeg;base64,` |
+| `.png` | `data:image/png;base64,` |
+
+Most converters already include this prefix automatically. If yours only gives you the raw string (starts with letters/numbers, no `data:` at the front), just paste the matching prefix yourself before the string.
 
 > 🚧 A drag-and-drop converter on my portfolio site is coming soon — will be linked here.
 
@@ -161,6 +186,8 @@ For creators making custom backgrounds.
 There are plenty of paid apps on the App Store that do exactly this — generate a QR business card. Most of them lock basic customization behind subscriptions, push ads, or force their own branding onto your card. For something this simple, paying monthly feels wrong.
 
 Apple Shortcuts is already on every iPhone. It's free, it runs offline, and every step is visible and editable. Fork it, swap the background, change the fonts, rearrange the layout — whatever fits your brand. No paywall, no telemetry, no "Pro" tier.
+
+And because a business card holds your name, email, and phone number, privacy matters. Everything here runs locally on your device — no account, no server, no analytics. Your details never leave your iPhone unless you choose to share the final image.
 
 Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
