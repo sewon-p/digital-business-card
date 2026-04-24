@@ -18,28 +18,24 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 <br/><br/>
 
-<p align="center">
-  <img src="assets/screen-dark.jpg" width="300" alt="Dark theme · With Logo"/>
-  &nbsp;&nbsp;
-  <img src="assets/screen-light.jpg" width="300" alt="Light theme · No Logo"/>
-</p>
-<p align="center">
-  <sub>Dark · With Logo &nbsp;·&nbsp; Light · No Logo</sub>
-</p>
-
 </div>
+
+|  |  |
+|:---:|:---:|
+| <img src="assets/screen-dark.jpg" width="300" alt="Dark · With Logo"/> | <img src="assets/screen-light.jpg" width="300" alt="Light · No Logo"/> |
+| **Dark · With Logo** | **Light · No Logo** |
 
 ---
 
 ## 🎬 Demo
 
 <p align="center">
-  <video src="assets/demo.mp4" width="320" autoplay loop muted playsinline></video>
+  <a href="assets/demo.mp4">
+    <img src="assets/demo-thumb.jpg" width="320" alt="Click to watch demo video"/>
+  </a>
+  <br/>
+  <sub><a href="assets/demo.mp4">▶ Watch demo (42s, 2 MB)</a></sub>
 </p>
-
-From empty template to saved card in under a minute.
-
-> If the video doesn't auto-play, [click here](assets/demo.mp4) to watch it.
 
 ---
 
@@ -83,7 +79,7 @@ Fill in each field in the Dictionary. All values are plain text.
 | EMAIL | `you@example.com` |
 | URL | `https://your-site.com` |
 | PHOTO | Base64 string or direct image URL (optional) |
-| X-LINKEDIN | `https://linkedin.com/in/username` |
+| X-LINKEDIN | `https://linkedin.com/in/username` (optional) |
 
 ### 5.2 Header Logic
 
@@ -94,8 +90,6 @@ The top slot above the QR card follows this priority:
 3. **Blank** — if both are empty
 
 > **Override**: If your background already has a logo baked in, insert a single space character in the Logo field to force the header blank (avoids duplication).
-
-The **"Digital Business Card"** watermark is always at the bottom.
 
 ### 5.3 Background
 
@@ -109,16 +103,6 @@ Recommended size: **1290 × 2590 px**. See [Design Guide](#-design-guide) for fu
 
 Need to convert an image to Base64? See the [Helper](#-image--base64-helper) below.
 
-### 5.4 Fine-Tuning
-
-Small adjustments you may want to make after the first run.
-
-**Logo Size**
-Change the height in the logo resize action. Width auto-scales to keep the aspect ratio. Default: `200`.
-
-**Text Overflow**
-If your email or phone number gets clipped at the edge, lower the font size in the corresponding overlay action until it fits. Keep both EMAIL and TEL values at the same size for balance.
-
 ---
 
 ## 🔄 Image → Base64 Helper
@@ -131,21 +115,13 @@ Use any online image-to-Base64 converter (e.g. [base64.guru](https://base64.guru
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-| Dark Theme | Light Theme |
-|:---:|:---:|
-| ![Dark](assets/screen-dark.png) | ![Light](assets/screen-light.png) |
-
-</div>
-
----
-
 ## 🖼 Design Guide
 
 For creators making custom backgrounds.
+
+<p align="center">
+  <img src="assets/design-guide.svg" alt="Canvas and QR card layout diagram" width="100%"/>
+</p>
 
 ### 8.1 Canvas
 
@@ -182,7 +158,11 @@ For creators making custom backgrounds.
 
 ## 💡 Why?
 
-Paper business cards get lost, misprinted, or forgotten. Building a native app for a single feature is overkill. Apple Shortcuts sits in a sweet spot — free, shareable via link, offline-capable, and editable by anyone. Fork it, make it yours.
+There are plenty of paid apps on the App Store that do exactly this — generate a QR business card. Most of them lock basic customization behind subscriptions, push ads, or force their own branding onto your card. For something this simple, paying monthly feels wrong.
+
+Apple Shortcuts is already on every iPhone. It's free, it runs offline, and every step is visible and editable. Fork it, swap the background, change the fonts, rearrange the layout — whatever fits your brand. No paywall, no telemetry, no "Pro" tier.
+
+Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
 ---
 
@@ -221,9 +201,15 @@ Open the shortcut in edit mode and tweak the overlay text actions directly. Each
 </details>
 
 <details>
-<summary>When I share the card, the filename shows as "Unknown".</summary>
+<summary>How do I resize the logo?</summary>
 
-Add a "Set Name" action before the save/share action, and set a custom filename. Photos app ignores filenames internally, but AirDrop and email clients will use the new name.
+Change the height in the logo resize action. Width auto-scales to keep the aspect ratio. Default: `200`.
+</details>
+
+<details>
+<summary>My email or phone number gets clipped at the edge.</summary>
+
+Lower the font size in the corresponding overlay action until it fits. Keep both EMAIL and TEL values at the same size for balance.
 </details>
 
 <details>
