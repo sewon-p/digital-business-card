@@ -33,15 +33,15 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 ---
 
-## 🎬 Demo
+## 💡 Why?
 
-<p align="center">
-  <a href="assets/demo.mp4">
-    <img src="assets/demo-thumb.jpg" width="320" alt="Click to watch demo video"/>
-  </a>
-  <br/>
-  <sub><a href="assets/demo.mp4">▶ Watch demo (42s, 2 MB)</a></sub>
-</p>
+There are plenty of paid apps on the App Store that do exactly this — generate a QR business card. Most of them lock basic customization behind subscriptions, push ads, or force their own branding onto your card. For something this simple, paying monthly feels wrong.
+
+Apple Shortcuts is already on every iPhone. It's free, it runs offline, and every step is visible and editable. Fork it, swap the background, change the fonts, rearrange the layout — whatever fits your brand. No paywall, no telemetry, no "Pro" tier.
+
+And because a business card holds your name, email, and phone number, privacy matters. Everything here runs locally on your device — no account, no server, no analytics. Your details never leave your iPhone unless you choose to share the final image.
+
+Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
 ---
 
@@ -68,6 +68,16 @@ That's it. The shortcut now lives in your library.
 ---
 
 ## 🎨 Customization
+
+<p align="center">
+  <a href="assets/demo.mp4">
+    <img src="assets/demo-thumb.jpg" width="320" alt="Click to watch setup walkthrough"/>
+  </a>
+  <br/>
+  <sub><a href="assets/demo.mp4">▶ Setup walkthrough (42s, 2 MB)</a></sub>
+</p>
+
+A full end-to-end walkthrough of filling in the Dictionary, setting the logo and background, and exporting the finished card.
 
 ### 5.1 Your Info
 
@@ -178,18 +188,6 @@ For creators making custom backgrounds.
 ### 8.4 Templates
 
 🚧 **Coming soon.** Figma / Sketch / PSD templates will be added in a future release.
-
----
-
-## 💡 Why?
-
-There are plenty of paid apps on the App Store that do exactly this — generate a QR business card. Most of them lock basic customization behind subscriptions, push ads, or force their own branding onto your card. For something this simple, paying monthly feels wrong.
-
-Apple Shortcuts is already on every iPhone. It's free, it runs offline, and every step is visible and editable. Fork it, swap the background, change the fonts, rearrange the layout — whatever fits your brand. No paywall, no telemetry, no "Pro" tier.
-
-And because a business card holds your name, email, and phone number, privacy matters. Everything here runs locally on your device — no account, no server, no analytics. Your details never leave your iPhone unless you choose to share the final image.
-
-Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
 ---
 
