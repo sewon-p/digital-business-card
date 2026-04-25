@@ -81,15 +81,19 @@ Two themes ship out of the box, demonstrating the header logic — one with a cu
 
 <p align="center">
   <img src="assets/dbc-workflow.png" width="100%" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
-  <br/>
-  <sub><b>4 steps</b> — labeled flow</sub>
 </p>
 
-<p align="center">
-  <img src="assets/demo.gif" width="280" alt="Setup walkthrough animation"/>
-  <br/>
-  <sub><b>In motion</b> — 2× speed loop · <a href="assets/demo.mp4">▶ original (42s)</a></sub>
-</p>
+<table align="center">
+  <tr>
+    <td valign="middle"><img src="assets/demo.gif" width="200" alt="Setup walkthrough"/></td>
+    <td valign="middle">
+      &nbsp;&nbsp;&nbsp;
+      <b>Watch the flow</b><br/>
+      <sub>The 4 steps above, in motion.</sub><br/><br/>
+      <sub>2× speed · loops · <a href="assets/demo.mp4">▶ original (42s)</a></sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
