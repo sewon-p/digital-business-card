@@ -12,11 +12,11 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 <br/><br/>
 
-<a href="https://www.icloud.com/shortcuts/a9389cdd28624595848a3b978c6f049e">
+<a href="https://www.icloud.com/shortcuts/f8f4f1f2767041afaba52f794a1c078a">
   <img src="assets/button-dark.png" alt="Download Dark Theme" height="64"/>
 </a>
 &nbsp;
-<a href="https://www.icloud.com/shortcuts/8ef8349704fa49ecb0b293131a7e0265">
+<a href="https://www.icloud.com/shortcuts/0d6eca428c77441eab8585dbf97f17e7">
   <img src="assets/button-light.png" alt="Download Light Theme" height="64"/>
 </a>
 
