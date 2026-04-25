@@ -226,7 +226,25 @@ For creators making custom backgrounds.
 
 ### 8.4 Templates
 
-🚧 **Coming soon.** Figma / Sketch / PSD templates will be added in a future release.
+Designing a custom background? Start from the official Figma template.
+
+<p align="center">
+  <a href="https://www.figma.com/design/0Ag3fK5laXjitTsIabEnKM/Digital-Business-Card-%C2%B7-Background-Template">
+    <b>🎨 Open Figma Template</b>
+  </a>
+</p>
+
+After opening, click **⋯ → Duplicate to your drafts** to make your own editable copy.
+
+The template includes:
+
+- Pre-positioned QR card slot (locked, 980 × 980 px)
+- Text overlay markers with exact coordinates and font specs
+- Two starting frames — Dark and Light themes
+- Safe area guides (Dynamic Island + Home Indicator)
+- Color palette swatches
+
+When you're done, export the frame as a 1290 × 2590 PNG/JPG and convert it to Base64 with the [helper above](#-image--base64-helper).
 
 ---
 
