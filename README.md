@@ -8,16 +8,16 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 <br/>
 
-<img src="assets/thumbnail.png" alt="Digital Business Card · Shortcut" width="640"/>
+<img src="assets/thumbnail.png" alt="Digital Business Card · Shortcut" width="100%"/>
 
 <br/><br/>
 
 <a href="https://www.icloud.com/shortcuts/a9389cdd28624595848a3b978c6f049e">
-  <img src="assets/button-dark.svg" alt="Download Dark Theme" height="64"/>
+  <img src="assets/button-dark.png" alt="Download Dark Theme" height="64"/>
 </a>
 &nbsp;
 <a href="https://www.icloud.com/shortcuts/8ef8349704fa49ecb0b293131a7e0265">
-  <img src="assets/button-light.svg" alt="Download Light Theme" height="64"/>
+  <img src="assets/button-light.png" alt="Download Light Theme" height="64"/>
 </a>
 
 </div>
@@ -82,10 +82,10 @@ Two themes ship out of the box, demonstrating the header logic — one with a cu
 <table align="center">
   <tr>
     <td align="center" valign="middle">
-      <img src="assets/dbc-workflow.png" width="720" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
+      <img src="assets/dbc-workflow.png" height="200" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
     </td>
     <td align="center" valign="middle">
-      <img src="assets/demo.gif" width="200" alt="Setup walkthrough animation"/>
+      <img src="assets/demo.gif" height="200" alt="Setup walkthrough animation"/>
     </td>
   </tr>
   <tr>
@@ -157,27 +157,23 @@ Inside the shortcut, the Logo and Background fields are clearly labeled by comme
 
 ## 🔄 Image → Base64 Helper
 
-To use a custom logo or background, you need a **Base64 string** — a long block of letters and numbers that represents your image as plain text.
+To use a custom logo or background, you need a **Base64 string** — a long block of letters and numbers that represents your image as plain text. Two ways to get one.
+
+### Option 1 — My drag-and-drop converter (recommended)
 
 <p align="center">
   <a href="https://sewon-p.github.io/#make-yours">
-    <img src="assets/button-converter.svg" alt="Open Base64 Converter on sewon-p.github.io" height="64"/>
+    <img src="assets/button-converter.png" alt="Open Base64 Converter on sewon-p.github.io" height="64"/>
   </a>
 </p>
 
 <p align="center">
-  <sub>Drag, drop, copy. 100% browser-side — nothing is uploaded.</sub>
+  <sub>Drag, drop, copy. 100% browser-side — nothing is uploaded. The output already includes the correct <code>data:image/...</code> prefix, so you can paste it straight into the shortcut.</sub>
 </p>
 
-**How it works**
+### Option 2 — Any other online converter
 
-1. Click the button above (or use any other Base64 image converter).
-2. Drop your image. The tool gives you a long string back.
-3. Copy it and paste into the Logo or Background field in the Dictionary.
-
-**Important — the prefix**
-
-The string you paste needs a short prefix at the very front so the shortcut knows what file type it is. The final value looks like this:
+Use any image-to-Base64 tool you trust (e.g. [base64.guru](https://base64.guru/converter/encode/image)). Most of them give you only the raw string without the prefix, so you need to add it yourself before pasting:
 
 ```
 data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ...(thousands more characters)
@@ -188,7 +184,7 @@ data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ...(thousands more characters)
 | `.jpg` / `.jpeg` | `data:image/jpeg;base64,` |
 | `.png` | `data:image/png;base64,` |
 
-The converter above adds this prefix automatically. If you use a different tool that outputs only the raw string (starts with letters/numbers, no `data:` at the front), paste the matching prefix yourself before the string.
+So the workflow is: convert → copy → paste the matching prefix → paste the string after it → done.
 
 ---
 
@@ -236,7 +232,7 @@ For creators making custom backgrounds.
 ## 🤝 Contributing
 
 - **Bug or idea** → [open an Issue](../../issues)
-- **Share your custom background** → [GitHub Discussions](../../discussions) (coming soon)
+- **Share your custom theme** → [Gallery on Discussions](../../discussions/categories/gallery)
 - **Code improvements** → pull requests welcome
 
 ---
