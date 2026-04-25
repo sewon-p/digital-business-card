@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="72" viewBox="0 0 280 72">
+  <defs>
+    <linearGradient id="convBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3B66"/>
+      <stop offset="1" stop-color="#1A2547"/>
+    </linearGradient>
+    <filter id="convShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="2" y="2" width="276" height="68" rx="14" fill="url(#convBg)" stroke="#3A4A75" stroke-width="1" filter="url(#convShadow)"/>
+
+  <!-- Upload / drag-drop icon -->
+  <g transform="translate(22, 18)" stroke="#FFFFFF" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Cloud-arrow icon: arrow going up into a tray -->
+    <path d="M18 24 V8"/>
+    <path d="M11 15 L18 8 L25 15"/>
+    <path d="M6 26 H30 V32 H6 Z" fill="#FFFFFF" fill-opacity="0.15"/>
+  </g>
+
+  <!-- Text -->
+  <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="11" fill="#A8B4D6" letter-spacing="0.5">OPEN ON SEWON-P.GITHUB.IO</text>
+  <text x="68" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="20" font-weight="600" fill="#FFFFFF" letter-spacing="-0.3">Base64 Converter</text>
+</svg>

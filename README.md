@@ -2,11 +2,15 @@
 
 # 📇 Digital Business Card
 
-**Share your contact info with a single tap. No app install. No paper. Just a QR.**
+**Share your contact info with a single tap. No app install. No paper. Just a Shortcut.**
 
 A fully native Apple Shortcut that generates a beautifully designed digital business card on your iPhone. Fill in your details once, tap run, and share the image anywhere.
 
 <br/>
+
+<img src="assets/thumbnail.png" alt="Digital Business Card · Shortcut" width="640"/>
+
+<br/><br/>
 
 <a href="https://www.icloud.com/shortcuts/a9389cdd28624595848a3b978c6f049e">
   <img src="assets/button-dark.svg" alt="Download Dark Theme" height="64"/>
@@ -15,19 +19,6 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 <a href="https://www.icloud.com/shortcuts/8ef8349704fa49ecb0b293131a7e0265">
   <img src="assets/button-light.svg" alt="Download Light Theme" height="64"/>
 </a>
-
-<br/><br/>
-
-<table align="center">
-  <tr>
-    <td align="center"><img src="assets/screen-dark.jpg" width="300" alt="Dark · With Logo"/></td>
-    <td align="center"><img src="assets/screen-light.jpg" width="300" alt="Light · No Logo"/></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Dark · With Logo</b></td>
-    <td align="center"><b>Light · No Logo</b></td>
-  </tr>
-</table>
 
 </div>
 
@@ -67,19 +58,41 @@ Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
 ---
 
+## 📸 Themes
+
+Two themes ship out of the box, demonstrating the header logic — one with a custom logo, one with the organization name as text.
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/screen-dark.jpg" width="280" alt="Dark · With Logo"/></td>
+    <td align="center"><img src="assets/screen-light.jpg" width="280" alt="Light · No Logo"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Dark · With Logo</b></td>
+    <td align="center"><b>Light · No Logo</b></td>
+  </tr>
+</table>
+
+---
+
 ## 🎨 Customization
 
-> 🎬 **Setup Walkthrough Video** — if you prefer watching over reading
+> 🎬 **Setup Walkthrough** — if you prefer watching over reading
 
-<p align="center">
-  <a href="assets/demo.mp4">
-    <img src="assets/demo-thumb.jpg" width="320" alt="Click to watch setup walkthrough"/>
-  </a>
-  <br/>
-  <sub><a href="assets/demo.mp4">▶ Watch (42s · 2 MB)</a></sub>
-</p>
-
-A full end-to-end walkthrough of filling in the Dictionary, setting the logo and background, and exporting the finished card.
+<table align="center">
+  <tr>
+    <td align="center" valign="middle">
+      <img src="assets/dbc-workflow.png" width="720" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
+    </td>
+    <td align="center" valign="middle">
+      <img src="assets/demo.gif" width="200" alt="Setup walkthrough animation"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>4 steps</b> — labeled flow</sub></td>
+    <td align="center"><sub><b>In motion</b> — 2× speed loop · <a href="assets/demo.mp4">▶ original (42s)</a></sub></td>
+  </tr>
+</table>
 
 ---
 
@@ -123,16 +136,43 @@ Recommended size: **1290 × 2590 px**. See [Design Guide](#-design-guide) for fu
 
 Need to convert an image to Base64? See the [Helper](#-image--base64-helper) below.
 
+### 5.4 Where to Paste
+
+Inside the shortcut, the Logo and Background fields are clearly labeled by comments. Find each comment, then paste your Base64 string (or image URL) into the **Text** action right below it.
+
+<table align="center">
+  <tr>
+    <td align="center"><img src="assets/guide-logo.jpg" width="280" alt="Logo paste location"/></td>
+    <td align="center"><img src="assets/guide-background.jpg" width="280" alt="Background paste location"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Logo</b><br/><sub>optional — skip if using Organization name</sub></td>
+    <td align="center"><b>Background</b><br/><sub>optional — default included</sub></td>
+  </tr>
+</table>
+
+> Both fields are optional. If you only fill in the Dictionary and leave Logo and Background blank, you'll still get a clean card with the default background and your Organization name as the header.
+
 ---
 
 ## 🔄 Image → Base64 Helper
 
 To use a custom logo or background, you need a **Base64 string** — a long block of letters and numbers that represents your image as plain text.
 
-**How to get one**
+<p align="center">
+  <a href="https://sewon-p.github.io/#make-yours">
+    <img src="assets/button-converter.svg" alt="Open Base64 Converter on sewon-p.github.io" height="64"/>
+  </a>
+</p>
 
-1. Open an online converter (e.g. [base64.guru](https://base64.guru/converter/encode/image)).
-2. Upload your image. The tool gives you a long string back.
+<p align="center">
+  <sub>Drag, drop, copy. 100% browser-side — nothing is uploaded.</sub>
+</p>
+
+**How it works**
+
+1. Click the button above (or use any other Base64 image converter).
+2. Drop your image. The tool gives you a long string back.
 3. Copy it and paste into the Logo or Background field in the Dictionary.
 
 **Important — the prefix**
@@ -148,9 +188,7 @@ data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQ...(thousands more characters)
 | `.jpg` / `.jpeg` | `data:image/jpeg;base64,` |
 | `.png` | `data:image/png;base64,` |
 
-Most converters already include this prefix automatically. If yours only gives you the raw string (starts with letters/numbers, no `data:` at the front), just paste the matching prefix yourself before the string.
-
-> 🚧 A drag-and-drop converter on my portfolio site is coming soon — will be linked here.
+The converter above adds this prefix automatically. If you use a different tool that outputs only the raw string (starts with letters/numbers, no `data:` at the front), paste the matching prefix yourself before the string.
 
 ---
 
