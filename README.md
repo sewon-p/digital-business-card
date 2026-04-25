@@ -79,20 +79,17 @@ Two themes ship out of the box, demonstrating the header logic — one with a cu
 
 > 🎬 **Setup Walkthrough** — if you prefer watching over reading
 
-<table align="center">
-  <tr>
-    <td align="center" valign="middle">
-      <img src="assets/dbc-workflow.png" height="200" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
-    </td>
-    <td align="center" valign="middle">
-      <img src="assets/demo.gif" height="200" alt="Setup walkthrough animation"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><sub><b>4 steps</b> — labeled flow</sub></td>
-    <td align="center"><sub><b>In motion</b> — 2× speed loop · <a href="assets/demo.mp4">▶ original (42s)</a></sub></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/dbc-workflow.png" width="100%" alt="4-step setup workflow: Open Edit → Fill Dictionary → Paste Base64 → Run Shortcut"/>
+  <br/>
+  <sub><b>4 steps</b> — labeled flow</sub>
+</p>
+
+<p align="center">
+  <img src="assets/demo.gif" width="280" alt="Setup walkthrough animation"/>
+  <br/>
+  <sub><b>In motion</b> — 2× speed loop · <a href="assets/demo.mp4">▶ original (42s)</a></sub>
+</p>
 
 ---
 
