@@ -60,8 +60,7 @@ Paper cards get lost. SaaS cards get held hostage. This one is just yours.
 
 ## 📸 Themes
 
-Two themes ship out of the box, demonstrating the header logic — one with a custom logo, one with the organization name as text.
-
+Two themes ship out of the box, demonstrating the header logic.
 <table align="center">
   <tr>
     <td align="center"><img src="assets/screen-dark.jpg" width="280" alt="Dark · With Logo"/></td>
