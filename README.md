@@ -12,11 +12,11 @@ A fully native Apple Shortcut that generates a beautifully designed digital busi
 
 <br/><br/>
 
-<a href="https://www.icloud.com/shortcuts/f8f4f1f2767041afaba52f794a1c078a">
+<a href="https://www.icloud.com/shortcuts/2cdeb5677d5949d58163d8540e6e7146">
   <img src="assets/button-dark.png" alt="Download Dark Theme" height="64"/>
 </a>
 &nbsp;
-<a href="https://www.icloud.com/shortcuts/0d6eca428c77441eab8585dbf97f17e7">
+<a href="https://www.icloud.com/shortcuts/4354921952034df4bf3e05f93a604b13">
   <img src="assets/button-light.png" alt="Download Light Theme" height="64"/>
 </a>
 
@@ -267,6 +267,18 @@ No, as long as your Logo and Background are stored as Base64 strings. If you use
 <summary>Where is my data stored?</summary>
 
 Everything stays on your device. The shortcut runs entirely locally in the Shortcuts app. The generated image is saved to your Photos library only.
+</details>
+
+<details>
+<summary>I see a "valid URL" error and the shortcut won't run.</summary>
+
+This means the **Logo** or **Background** field has invalid input. Open the shortcut and check the Text action right below the corresponding comment:
+
+- If you pasted a **Base64 string**, make sure it starts with `data:image/jpeg;base64,` or `data:image/png;base64,` (the prefix is required)
+- If you pasted a **URL**, make sure it's a direct image link (ends in `.jpg` or `.png`, or returns an image when opened in a browser)
+- If you don't want a custom logo or background, **leave the Text field completely empty** — do not type anything else
+
+Half-pasted Base64 strings, regular text, or non-image URLs will all trigger this error.
 </details>
 
 <details>
